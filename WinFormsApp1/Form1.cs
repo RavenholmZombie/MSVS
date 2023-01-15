@@ -136,6 +136,8 @@ namespace WinFormsApp1
                 StreamReader sr = new StreamReader(response.GetResponseStream());
 
                 string newestversion = sr.ReadToEnd();
+                Settings.Default.newerVersion = newestversion;
+                Settings.Default.Save();
                 string currentversion = Application.ProductVersion;
 
                 if (newestversion.Contains(currentversion))
@@ -181,7 +183,7 @@ namespace WinFormsApp1
         private void uA_Click(object sender, EventArgs e)
         {
             Opacity = 0;
-            OpenURL("https://sites.google.com/view/ravenholmzombie/downloads?authuser=0");
+            OpenURL("https://github.com/RavenholmZombie/MSVS/releases/tag/" + Settings.Default.newerVersion);
             Application.Exit();
         }
     }

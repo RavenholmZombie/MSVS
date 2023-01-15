@@ -34,5 +34,17 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
                 this["cachedUsername"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string newerVersion {
+            get {
+                return ((string)(this["newerVersion"]));
+            }
+            set {
+                this["newerVersion"] = value;
+            }
+        }
     }
 }
