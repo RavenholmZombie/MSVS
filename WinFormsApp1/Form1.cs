@@ -130,7 +130,7 @@ namespace WinFormsApp1
         {
             try
             {
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://raw.githubusercontent.com/RavenholmZombie/RavenholmZombie/main/msvs.txt");
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://raw.githubusercontent.com/RavenholmZombie/MSVS/main/update.txt");
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
                 StreamReader sr = new StreamReader(response.GetResponseStream());

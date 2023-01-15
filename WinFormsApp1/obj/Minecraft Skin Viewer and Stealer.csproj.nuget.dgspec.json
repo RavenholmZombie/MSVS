@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {}
+    "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {
+    "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {
       "version": "1.0.3",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
+        "projectUniqueName": "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
         "projectName": "Minecraft Skin Viewer and Stealer",
-        "projectPath": "C:\\Users\\chris\\source\\repos\\WinFormsApp1\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
+        "projectPath": "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\source\\repos\\WinFormsApp1\\WinFormsApp1\\obj\\",
+        "outputPath": "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
