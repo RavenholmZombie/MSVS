@@ -1,0 +1,6 @@
+C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.exe
+C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.dll
+C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.deps.json
+C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.runtimeconfig.json
+C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.dll.config
+C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.pdb

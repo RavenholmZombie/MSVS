@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WinFormsApp1</id>
+    <version>1.0.0</version>
+    <authors>WinFormsApp1</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\WinFormsApp1.runtimeconfig.json" target="lib\net6.0-windows7.0\WinFormsApp1.runtimeconfig.json" />
+    <file src="C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\WinFormsApp1.dll" target="lib\net6.0-windows7.0\WinFormsApp1.dll" />
+  </files>
+</package>

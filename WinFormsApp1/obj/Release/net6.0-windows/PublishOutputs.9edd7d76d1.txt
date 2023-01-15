@@ -1,0 +1,6 @@
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\app.publish\Minecraft Skin Viewer and Stealer.exe
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\app.publish\Minecraft Skin Viewer and Stealer.dll
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\app.publish\Minecraft Skin Viewer and Stealer.deps.json
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\app.publish\Minecraft Skin Viewer and Stealer.runtimeconfig.json
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\app.publish\Minecraft Skin Viewer and Stealer.dll.config
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net6.0-windows\app.publish\Minecraft Skin Viewer and Stealer.pdb

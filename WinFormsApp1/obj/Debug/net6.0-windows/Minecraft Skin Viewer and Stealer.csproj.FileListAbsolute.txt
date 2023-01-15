@@ -1,0 +1,19 @@
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.exe
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.dll.config
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.deps.json
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.runtimeconfig.json
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.dll
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\bin\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.pdb
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.csproj.AssemblyReference.cache
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form1.resources
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.csproj.GenerateResource.cache
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.AssemblyInfoInputs.cache
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.AssemblyInfo.cs
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.dll
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\refint\Minecraft Skin Viewer and Stealer.dll
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.pdb
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.genruntimeconfig.cache
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\ref\Minecraft Skin Viewer and Stealer.dll
+C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.resources
