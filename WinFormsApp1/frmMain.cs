@@ -4,9 +4,9 @@ using System.Net;
 
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -20,10 +20,13 @@ namespace WinFormsApp1
                 {
                     pBoxSkin.ImageLocation = "https://mc-heads.net/body/" + Settings.Default.cachedUsername;
                     textBox1.Text = Settings.Default.cachedUsername;
+                    showPlayerInfoToolStripMenuItem.Text = "Show info about " + Settings.Default.cachedUsername;
+                    showPlayerInfoToolStripMenuItem.Visible = true;
                 }
                 else
                 {
                     pBoxSkin.ImageLocation = "https://mc-heads.net/body/MHF_Steve";
+                    showPlayerInfoToolStripMenuItem.Visible = false;
                 }
             }
             catch(Exception ex)
@@ -41,6 +44,8 @@ namespace WinFormsApp1
                     pBoxSkin.ImageLocation = "https://mc-heads.net/body/" + textBox1.Text;
                     Settings.Default.cachedUsername = textBox1.Text;
                     Settings.Default.Save();
+                    showPlayerInfoToolStripMenuItem.Text = "Show info about " + textBox1.Text;
+                    showPlayerInfoToolStripMenuItem.Visible = true;
                 }
                 catch(Exception ex)
                 {
@@ -185,6 +190,11 @@ namespace WinFormsApp1
             Opacity = 0;
             OpenURL("https://github.com/RavenholmZombie/MSVS/releases/tag/" + Settings.Default.newerVersion);
             Application.Exit();
+        }
+
+        private void showPlayerInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenURL("https://namemc.com/profile/" + Settings.Default.cachedUsername);
         }
     }
 }
