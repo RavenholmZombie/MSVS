@@ -17,3 +17,22 @@ C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Release\net6.0-windows
 C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.genruntimeconfig.cache
 C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Release\net6.0-windows\ref\Minecraft Skin Viewer and Stealer.dll
 C:\Users\chris\source\repos\WinFormsApp1\WinFormsApp1\obj\Release\net6.0-windows\Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.resources
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\bin\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.exe
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\bin\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.dll.config
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\bin\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.deps.json
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\bin\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.runtimeconfig.json
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\bin\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.dll
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\bin\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.pdb
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.csproj.AssemblyReference.cache
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.resources
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.csproj.GenerateResource.cache
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.AssemblyInfoInputs.cache
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.AssemblyInfo.cs
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.csproj.CoreCompileInputs.cache
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.dll
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\refint\Minecraft Skin Viewer and Stealer.dll
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.pdb
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\Minecraft Skin Viewer and Stealer.genruntimeconfig.cache
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\ref\Minecraft Skin Viewer and Stealer.dll
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Release\net6.0-windows\WinFormsApp1.frmMain.resources

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Minecraft Skin Viewer and Stealer/1.0.3": {
+      "Minecraft Skin Viewer and Stealer/1.0.5": {
         "runtime": {
           "Minecraft Skin Viewer and Stealer.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "Minecraft Skin Viewer and Stealer/1.0.3": {
+    "Minecraft Skin Viewer and Stealer/1.0.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

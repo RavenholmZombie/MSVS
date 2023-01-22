@@ -63,6 +63,16 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bg {
+            get {
+                object obj = ResourceManager.GetObject("bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap c5ef3347_4593_4f39_8bb1_2eaa40dd986e {
             get {
                 object obj = ResourceManager.GetObject("c5ef3347-4593-4f39-8bb1-2eaa40dd986e", resourceCulture);
@@ -103,9 +113,29 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_nmc {
+            get {
+                object obj = ResourceManager.GetObject("logo_nmc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MHF_Steve {
             get {
                 object obj = ResourceManager.GetObject("MHF_Steve", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wp2586777 {
+            get {
+                object obj = ResourceManager.GetObject("wp2586777", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

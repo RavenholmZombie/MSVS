@@ -4,31 +4,46 @@ using System.Net;
 
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            CheckForUpdates();
-            try
+            if(CheckForInternetConnection(10000, "http://www.gstatic.com/generate_204"))
             {
-                if (!String.IsNullOrEmpty(Settings.Default.cachedUsername))
+                CheckForUpdates();
+                try
                 {
-                    pBoxSkin.ImageLocation = "https://mc-heads.net/body/" + Settings.Default.cachedUsername;
-                    textBox1.Text = Settings.Default.cachedUsername;
+                    if (!String.IsNullOrEmpty(Settings.Default.cachedUsername))
+                    {
+                        pBoxSkin.ImageLocation = "https://mc-heads.net/body/" + Settings.Default.cachedUsername;
+                        textBox1.Text = Settings.Default.cachedUsername;
+                        showPlayerInfoToolStripMenuItem.Text = "Show info about " + Settings.Default.cachedUsername;
+                        showPlayerInfoToolStripMenuItem.Visible = true;
+                        PopulateIcon();
+                    }
+                    else
+                    {
+                        pBoxSkin.ImageLocation = "https://mc-heads.net/body/MHF_Steve";
+                        showPlayerInfoToolStripMenuItem.Visible = false;
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    pBoxSkin.ImageLocation = "https://mc-heads.net/body/MHF_Steve";
+                    pBoxSkin.BackgroundImage = Resources.error;
                 }
             }
-            catch(Exception ex)
+            else
             {
-                pBoxSkin.BackgroundImage = Resources.error;
+                Opacity = 0;
+                if (MessageBox.Show("An active Internet connection is required to use this app. Please check your network and try again.", "Fatal Error", MessageBoxButtons.OK, MessageBoxIcon.Error) == DialogResult.OK)
+                {
+                    Application.Exit();
+                }
             }
         }
 
@@ -41,6 +56,10 @@ namespace WinFormsApp1
                     pBoxSkin.ImageLocation = "https://mc-heads.net/body/" + textBox1.Text;
                     Settings.Default.cachedUsername = textBox1.Text;
                     Settings.Default.Save();
+                    showPlayerInfoToolStripMenuItem.Text = "Show info about " + textBox1.Text;
+                    showPlayerInfoToolStripMenuItem.Visible = true;
+                    PopulateIcon();
+
                 }
                 catch(Exception ex)
                 {
@@ -68,6 +87,8 @@ namespace WinFormsApp1
                         var wClient = new WebClient();
                         var skinURI = new Uri("https://mc-heads.net/skin/" + textBox1.Text);
                         wClient.DownloadFileAsync(skinURI, dialog.FileName);
+                        
+
 
                         if (File.Exists(dialog.FileName))
                         {
@@ -134,21 +155,16 @@ namespace WinFormsApp1
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
                 StreamReader sr = new StreamReader(response.GetResponseStream());
+                string newestVersion = sr.ReadToEnd();
+                string currentVersion = Application.ProductVersion;
 
-                string newestversion = sr.ReadToEnd();
-                Settings.Default.newerVersion = newestversion;
-                Settings.Default.Save();
-                string currentversion = Application.ProductVersion;
-
-                if (newestversion.Contains(currentversion))
+                if (newestVersion != currentVersion)
                 {
-                    // Current Version
-                    uA.Visible = false;
+                    uA.Visible = true;
                 }
                 else
                 {
-                    // Newer Version
-                    uA.Visible = true;
+                    uA.Visible = false;
                 }
             }
             catch(Exception ex)
@@ -175,16 +191,52 @@ namespace WinFormsApp1
             }
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void uA_Click(object sender, EventArgs e)
         {
             Opacity = 0;
             OpenURL("https://github.com/RavenholmZombie/MSVS/releases/tag/" + Settings.Default.newerVersion);
             Application.Exit();
+        }
+
+        private void showPlayerInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenURL("https://namemc.com/profile/" + Settings.Default.cachedUsername);
+        }
+
+        public void PopulateIcon()
+        {
+            try
+            {
+                WebClient wc = new WebClient();
+                byte[] originalData = wc.DownloadData("https://mc-heads.net/head/" + textBox1.Text);
+
+                MemoryStream stream = new MemoryStream(originalData);
+                Bitmap icn_png = new Bitmap(stream);
+
+                IntPtr HIcn = icn_png.GetHicon();
+                Icon icn = Icon.FromHandle(HIcn);
+                Icon = icn;
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }
+
+        public static bool CheckForInternetConnection(int timeoutMs = 10000, string url = null)
+        {
+            try
+            {
+                var request = (HttpWebRequest)WebRequest.Create(url);
+                request.KeepAlive = false;
+                request.Timeout = timeoutMs;
+                using (var response = (HttpWebResponse)request.GetResponse())
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
