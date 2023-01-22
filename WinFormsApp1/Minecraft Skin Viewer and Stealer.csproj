@@ -15,7 +15,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\head.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="head.ico" />
+    <Content Include="Resources\head.ico" />
   </ItemGroup>
 
   <ItemGroup>
