@@ -36,3 +36,4 @@ D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin View
 D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft Skin Viewer and Stealer.genruntimeconfig.cache
 D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Debug\net6.0-windows\ref\Minecraft Skin Viewer and Stealer.dll
 D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.frmMain.resources
+D:\Forge Dev\MSVS\MSVS\WinFormsApp1\obj\Debug\net6.0-windows\Minecraft_Skin_Viewer_and_Stealer.frmAbout.resources

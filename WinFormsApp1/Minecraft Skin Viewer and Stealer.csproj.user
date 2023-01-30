@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>D:\Forge Dev\MSVS\MSVS\WinFormsApp1\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>

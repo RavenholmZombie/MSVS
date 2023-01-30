@@ -63,6 +63,16 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2023_01_14_13_37_21 {
+            get {
+                object obj = ResourceManager.GetObject("2023-01-14_13.37.21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bg {
             get {
                 object obj = ResourceManager.GetObject("bg", resourceCulture);
@@ -126,6 +136,16 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
         internal static System.Drawing.Bitmap MHF_Steve {
             get {
                 object obj = ResourceManager.GetObject("MHF_Steve", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minecraft_Skin_Viewer_an {
+            get {
+                object obj = ResourceManager.GetObject("Minecraft-Skin-Viewer-an", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

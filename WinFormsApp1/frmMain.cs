@@ -1,11 +1,14 @@
+using Minecraft_Skin_Viewer_and_Stealer;
 using Minecraft_Skin_Viewer_and_Stealer.Properties;
 using System.Diagnostics;
 using System.Net;
+using System.Runtime.InteropServices;
 
 namespace WinFormsApp1
 {
     public partial class frmMain : Form
     {
+
         public frmMain()
         {
             InitializeComponent();
@@ -118,7 +121,8 @@ namespace WinFormsApp1
         }
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("A simple Windows app that uses MC-Heads' API to view and download Minecraft skins" + "\n\n" + "Version " + Application.ProductVersion + "\n" + "Coded by RavenholmZombie", "About Minecraft Skin Viewer and Stealer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            frmAbout ab = new frmAbout();
+            ab.ShowDialog();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
