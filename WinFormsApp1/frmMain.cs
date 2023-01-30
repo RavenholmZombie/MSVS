@@ -25,9 +25,9 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if(CheckForInternetConnection(10000, "http://www.gstatic.com/generate_204"))
+            if (CheckForInternetConnection(10000, "https://google.com"))
             {
-                CheckForUpdates();
+                CheckForUpdates(Application.ProductVersion);
                 try
                 {
                     if (!String.IsNullOrEmpty(Settings.Default.cachedUsername))
@@ -160,23 +160,20 @@ namespace WinFormsApp1
             }
         }
 
-        public void CheckForUpdates()
+        public void CheckForUpdates(string currentVersion)
         {
             try
             {
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://raw.githubusercontent.com/RavenholmZombie/MSVS/main/update.txt");
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+                WebClient wC = new WebClient();
 
-                StreamReader sr = new StreamReader(response.GetResponseStream());
-                string newestVersion = sr.ReadToEnd();
-                string currentVersion = Application.ProductVersion;
-
-                if (newestVersion != currentVersion)
+                if (!wC.DownloadString("https://raw.githubusercontent.com/RavenholmZombie/MSVS/main/update.txt").Contains(currentVersion))
                 {
+                    // Newer Version
                     uA.Visible = true;
                 }
                 else
                 {
+                    // Up to date already
                     uA.Visible = false;
                 }
             }
@@ -206,9 +203,10 @@ namespace WinFormsApp1
 
         private void uA_Click(object sender, EventArgs e)
         {
-            Opacity = 0;
-            OpenURL("https://github.com/RavenholmZombie/MSVS/releases/tag/" + Settings.Default.newerVersion);
-            Application.Exit();
+            frmAbout frmA = new frmAbout();
+            frmA.tabControl1.SelectedIndex = 3;
+            frmA.btnCheck.PerformClick();
+            frmA.ShowDialog();
         }
 
         private void showPlayerInfoToolStripMenuItem_Click(object sender, EventArgs e)

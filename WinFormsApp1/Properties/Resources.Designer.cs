@@ -63,6 +63,16 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2023_01_13_20_04_29 {
+            get {
+                object obj = ResourceManager.GetObject("2023-01-13_20.04.29", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2023_01_14_13_37_21 {
             get {
                 object obj = ResourceManager.GetObject("2023-01-14_13.37.21", resourceCulture);

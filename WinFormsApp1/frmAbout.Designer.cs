@@ -42,6 +42,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnDownload = new System.Windows.Forms.Button();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.lblNewerVersion = new System.Windows.Forms.Label();
+            this.lblCurrentVersion = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -51,6 +57,8 @@
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -61,6 +69,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -69,7 +78,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources._2023_01_14_13_37_21;
+            this.tabPage1.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources._2023_01_13_20_04_29;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.lblVersion);
@@ -206,6 +215,68 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 24);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(385, 236);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Updates";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnDownload);
+            this.groupBox2.Controls.Add(this.btnCheck);
+            this.groupBox2.Controls.Add(this.lblNewerVersion);
+            this.groupBox2.Controls.Add(this.lblCurrentVersion);
+            this.groupBox2.Location = new System.Drawing.Point(85, 54);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(215, 118);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Updater";
+            // 
+            // btnDownload
+            // 
+            this.btnDownload.Location = new System.Drawing.Point(6, 86);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(75, 23);
+            this.btnDownload.TabIndex = 3;
+            this.btnDownload.Text = "Download";
+            this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(134, 86);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.TabIndex = 1;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // lblNewerVersion
+            // 
+            this.lblNewerVersion.AutoSize = true;
+            this.lblNewerVersion.Location = new System.Drawing.Point(17, 55);
+            this.lblNewerVersion.Name = "lblNewerVersion";
+            this.lblNewerVersion.Size = new System.Drawing.Size(137, 15);
+            this.lblNewerVersion.TabIndex = 2;
+            this.lblNewerVersion.Text = "Please check for updates";
+            // 
+            // lblCurrentVersion
+            // 
+            this.lblCurrentVersion.AutoSize = true;
+            this.lblCurrentVersion.Location = new System.Drawing.Point(17, 29);
+            this.lblCurrentVersion.Name = "lblCurrentVersion";
+            this.lblCurrentVersion.Size = new System.Drawing.Size(102, 15);
+            this.lblCurrentVersion.TabIndex = 1;
+            this.lblCurrentVersion.Text = "Your version: 1.0.7";
+            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -244,13 +315,14 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
         private Button button1;
@@ -264,5 +336,12 @@
         private RichTextBox richTextBox2;
         private PictureBox pictureBox2;
         private Label lblVersion;
+        private TabPage tabPage4;
+        private GroupBox groupBox2;
+        private Label lblNewerVersion;
+        private Label lblCurrentVersion;
+        private Button btnDownload;
+        public TabControl tabControl1;
+        public Button btnCheck;
     }
 }
