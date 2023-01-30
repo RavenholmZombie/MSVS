@@ -98,7 +98,7 @@
             this.pictureBox2.Image = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.Minecraft_Skin_Viewer_an;
             this.pictureBox2.Location = new System.Drawing.Point(20, 70);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(342, 22);
+            this.pictureBox2.Size = new System.Drawing.Size(342, 17);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -209,7 +209,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(306, 270);
+            this.button1.Location = new System.Drawing.Point(306, 273);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
