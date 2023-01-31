@@ -43,12 +43,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnDownload = new System.Windows.Forms.Button();
             this.btnCheck = new System.Windows.Forms.Button();
             this.lblNewerVersion = new System.Windows.Forms.Label();
             this.lblCurrentVersion = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.sfd = new System.Windows.Forms.SaveFileDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -78,7 +81,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources._2023_01_13_20_04_29;
+            this.tabPage1.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources._2023_01_13_19_58_17;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.lblVersion);
@@ -217,6 +220,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.progressBar1);
             this.tabPage4.Controls.Add(this.groupBox2);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
@@ -225,6 +230,23 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Updates";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 192);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Downloading latest GitHub release...";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.progressBar1.Location = new System.Drawing.Point(3, 210);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(379, 23);
+            this.progressBar1.TabIndex = 1;
             // 
             // groupBox2
             // 
@@ -316,6 +338,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -343,5 +366,8 @@
         private Button btnDownload;
         public TabControl tabControl1;
         public Button btnCheck;
+        private ProgressBar progressBar1;
+        private Label label3;
+        private SaveFileDialog sfd;
     }
 }
