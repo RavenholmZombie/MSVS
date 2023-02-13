@@ -8,16 +8,6 @@ namespace WinFormsApp1
 {
     public partial class frmMain : Form
     {
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams handleParam = base.CreateParams;
-                handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
-                return handleParam;
-            }
-        }
-
         public frmMain()
         {
             InitializeComponent();
@@ -25,9 +15,16 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            radioSkin.Checked = true;
             if (CheckForInternetConnection(10000, "https://google.com"))
             {
                 CheckForUpdates(Application.ProductVersion);
+
+                toolTip.SetToolTip(radioSkin, "Download the player's raw skin file.");
+                toolTip.SetToolTip(radioIso, "Download an isometric render of the player's skin.");
+                toolTip.SetToolTip(radioFace, "Download a flat face render of the player's skin.");
+                toolTip.SetToolTip(radioHead, "Download an isometric render of the player's head.");
+
                 try
                 {
                     if (!String.IsNullOrEmpty(Settings.Default.cachedUsername))
@@ -89,18 +86,31 @@ namespace WinFormsApp1
                 try
                 {
                     button1.PerformClick();
+                    dialog.Title = "Choose where to save your file";
                     dialog.Filter = "PNG Images (*.png)|*.png";
-                    dialog.Title = "Choose where to save " + textBox1.Text + "'s skin";
                     dialog.FileName = textBox1.Text;
 
                     var result = dialog.ShowDialog();
                     if (result == DialogResult.OK)
                     {
                         var wClient = new WebClient();
-                        var skinURI = new Uri("https://mc-heads.net/skin/" + textBox1.Text);
-                        wClient.DownloadFileAsync(skinURI, dialog.FileName);
-                        
 
+                        if(radioSkin.Checked)
+                        {
+                            wClient.DownloadFileAsync(new Uri("https://mc-heads.net/skin/" + textBox1.Text), dialog.FileName);
+                        }
+                        if(radioIso.Checked)
+                        {
+                            wClient.DownloadFileAsync(new Uri("https://mc-heads.net/body/" + textBox1.Text), dialog.FileName);
+                        }
+                        if(radioFace.Checked)
+                        {
+                            wClient.DownloadFileAsync(new Uri("https://mc-heads.net/avatar/" + textBox1.Text), dialog.FileName);
+                        }
+                        if (radioHead.Checked)
+                        {
+                            wClient.DownloadFileAsync(new Uri("https://mc-heads.net/head/" + textBox1.Text), dialog.FileName);
+                        }
 
                         if (File.Exists(dialog.FileName))
                         {

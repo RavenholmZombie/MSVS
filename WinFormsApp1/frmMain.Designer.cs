@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pBoxSkin = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,9 +46,16 @@
             this.uA = new System.Windows.Forms.ToolStripMenuItem();
             this.dialog = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioHead = new System.Windows.Forms.RadioButton();
+            this.radioFace = new System.Windows.Forms.RadioButton();
+            this.radioIso = new System.Windows.Forms.RadioButton();
+            this.radioSkin = new System.Windows.Forms.RadioButton();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxSkin)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pBoxSkin
@@ -56,7 +64,7 @@
             this.pBoxSkin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBoxSkin.ErrorImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.error;
             this.pBoxSkin.InitialImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.MHF_Steve;
-            this.pBoxSkin.Location = new System.Drawing.Point(106, 48);
+            this.pBoxSkin.Location = new System.Drawing.Point(106, 50);
             this.pBoxSkin.Name = "pBoxSkin";
             this.pBoxSkin.Size = new System.Drawing.Size(86, 199);
             this.pBoxSkin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -183,6 +191,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button2);
@@ -192,6 +201,63 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(291, 165);
             this.panel1.TabIndex = 6;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioHead);
+            this.groupBox1.Controls.Add(this.radioFace);
+            this.groupBox1.Controls.Add(this.radioIso);
+            this.groupBox1.Controls.Add(this.radioSkin);
+            this.groupBox1.Location = new System.Drawing.Point(28, 65);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(235, 59);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Download Options";
+            // 
+            // radioHead
+            // 
+            this.radioHead.AutoSize = true;
+            this.radioHead.Location = new System.Drawing.Point(182, 22);
+            this.radioHead.Name = "radioHead";
+            this.radioHead.Size = new System.Drawing.Size(53, 19);
+            this.radioHead.TabIndex = 3;
+            this.radioHead.TabStop = true;
+            this.radioHead.Text = "Head";
+            this.radioHead.UseVisualStyleBackColor = true;
+            // 
+            // radioFace
+            // 
+            this.radioFace.AutoSize = true;
+            this.radioFace.Location = new System.Drawing.Point(132, 22);
+            this.radioFace.Name = "radioFace";
+            this.radioFace.Size = new System.Drawing.Size(49, 19);
+            this.radioFace.TabIndex = 2;
+            this.radioFace.TabStop = true;
+            this.radioFace.Text = "Face";
+            this.radioFace.UseVisualStyleBackColor = true;
+            // 
+            // radioIso
+            // 
+            this.radioIso.AutoSize = true;
+            this.radioIso.Location = new System.Drawing.Point(56, 22);
+            this.radioIso.Name = "radioIso";
+            this.radioIso.Size = new System.Drawing.Size(74, 19);
+            this.radioIso.TabIndex = 1;
+            this.radioIso.TabStop = true;
+            this.radioIso.Text = "Isometric";
+            this.radioIso.UseVisualStyleBackColor = true;
+            // 
+            // radioSkin
+            // 
+            this.radioSkin.AutoSize = true;
+            this.radioSkin.Location = new System.Drawing.Point(5, 22);
+            this.radioSkin.Name = "radioSkin";
+            this.radioSkin.Size = new System.Drawing.Size(47, 19);
+            this.radioSkin.TabIndex = 0;
+            this.radioSkin.TabStop = true;
+            this.radioSkin.Text = "Skin";
+            this.radioSkin.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -219,6 +285,8 @@
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +310,11 @@
         private ToolStripMenuItem uA;
         private Panel panel1;
         private ToolStripMenuItem showPlayerInfoToolStripMenuItem;
+        private GroupBox groupBox1;
+        private RadioButton radioFace;
+        private RadioButton radioIso;
+        private RadioButton radioSkin;
+        private RadioButton radioHead;
+        private ToolTip toolTip;
     }
 }
