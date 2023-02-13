@@ -81,7 +81,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources._2023_01_13_19_58_17;
+            this.tabPage1.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources._2023_01_14_13_27_01;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.lblVersion);

@@ -56,7 +56,7 @@
             this.pBoxSkin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBoxSkin.ErrorImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.error;
             this.pBoxSkin.InitialImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.MHF_Steve;
-            this.pBoxSkin.Location = new System.Drawing.Point(106, 38);
+            this.pBoxSkin.Location = new System.Drawing.Point(106, 48);
             this.pBoxSkin.Name = "pBoxSkin";
             this.pBoxSkin.Size = new System.Drawing.Size(86, 199);
             this.pBoxSkin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -67,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 21);
+            this.label1.Location = new System.Drawing.Point(28, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 15);
             this.label1.TabIndex = 1;
@@ -75,7 +75,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 39);
+            this.textBox1.Location = new System.Drawing.Point(28, 27);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "e.g.: CSX8600";
             this.textBox1.Size = new System.Drawing.Size(235, 23);
@@ -85,7 +85,7 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(148, 73);
+            this.button1.Location = new System.Drawing.Point(148, 130);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -96,7 +96,7 @@
             // button2
             // 
             this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(67, 71);
+            this.button2.Location = new System.Drawing.Point(67, 128);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -188,19 +188,19 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 252);
+            this.panel1.Location = new System.Drawing.Point(0, 263);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 111);
+            this.panel1.Size = new System.Drawing.Size(291, 165);
             this.panel1.TabIndex = 6;
             // 
-            // Form1
+            // frmMain
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(291, 363);
+            this.ClientSize = new System.Drawing.Size(291, 428);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pBoxSkin);
             this.Controls.Add(this.menuStrip1);
@@ -210,7 +210,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Minecraft Skin Viewer and Stealer";
             this.Load += new System.EventHandler(this.Form1_Load);
