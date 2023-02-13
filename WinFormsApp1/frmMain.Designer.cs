@@ -75,7 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 9);
+            this.label1.Location = new System.Drawing.Point(28, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 15);
             this.label1.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 27);
+            this.textBox1.Location = new System.Drawing.Point(28, 34);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "e.g.: CSX8600";
             this.textBox1.Size = new System.Drawing.Size(235, 23);
