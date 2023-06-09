@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A simple Windows app that uses MC-Heads.net\'s API to view or download a player\'s " +
     "skin.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.9")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Minecraft Skin Viewer and Stealer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Minecraft Skin Viewer and Stealer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.9")]

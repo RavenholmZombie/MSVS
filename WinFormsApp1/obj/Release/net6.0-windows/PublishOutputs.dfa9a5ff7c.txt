@@ -4,3 +4,7 @@ C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.deps.json
 C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.runtimeconfig.json
 C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.dll.config
 C:\Users\chris\Desktop\New folder\Minecraft Skin Viewer and Stealer.pdb
+C:\Users\chris\Desktop\New folder\DarkUI.dll
+C:\Users\chris\Desktop\New folder\MaterialDesignColors.dll
+C:\Users\chris\Desktop\New folder\MaterialDesignThemes.Wpf.dll
+C:\Users\chris\Desktop\New folder\Microsoft.Xaml.Behaviors.dll

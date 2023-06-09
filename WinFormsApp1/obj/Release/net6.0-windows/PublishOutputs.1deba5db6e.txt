@@ -1,0 +1,10 @@
+C:\Users\chris\OneDrive\Desktop\msvs\Minecraft Skin Viewer and Stealer.exe
+C:\Users\chris\OneDrive\Desktop\msvs\Minecraft Skin Viewer and Stealer.dll
+C:\Users\chris\OneDrive\Desktop\msvs\Minecraft Skin Viewer and Stealer.deps.json
+C:\Users\chris\OneDrive\Desktop\msvs\Minecraft Skin Viewer and Stealer.runtimeconfig.json
+C:\Users\chris\OneDrive\Desktop\msvs\Minecraft Skin Viewer and Stealer.dll.config
+C:\Users\chris\OneDrive\Desktop\msvs\Minecraft Skin Viewer and Stealer.pdb
+C:\Users\chris\OneDrive\Desktop\msvs\DarkUI.dll
+C:\Users\chris\OneDrive\Desktop\msvs\MaterialDesignColors.dll
+C:\Users\chris\OneDrive\Desktop\msvs\MaterialDesignThemes.Wpf.dll
+C:\Users\chris\OneDrive\Desktop\msvs\Microsoft.Xaml.Behaviors.dll
