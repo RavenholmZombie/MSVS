@@ -343,5 +343,14 @@ namespace WinFormsApp1
         {
             btnDownload.Text = "Download Head";
         }
+
+        private void textboxUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                btnShow.PerformClick();
+            }
+        }
     }
 }

@@ -168,6 +168,7 @@
             textboxUsername.Size = new Size(249, 23);
             textboxUsername.TabIndex = 8;
             textboxUsername.TextChanged += darkTextBox1_TextChanged;
+            textboxUsername.KeyPress += textboxUsername_KeyPress;
             // 
             // btnShow
             // 
