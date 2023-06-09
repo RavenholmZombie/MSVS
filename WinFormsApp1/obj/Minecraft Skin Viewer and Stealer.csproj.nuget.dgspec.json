@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {}
+    "D:\\Forge Dev\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {}
   },
   "projects": {
-    "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {
-      "version": "1.0.9",
+    "D:\\Forge Dev\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj": {
+      "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
+        "projectUniqueName": "D:\\Forge Dev\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
         "projectName": "Minecraft Skin Viewer and Stealer",
-        "projectPath": "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
+        "projectPath": "D:\\Forge Dev\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\obj\\",
+        "outputPath": "D:\\Forge Dev\\MSVS\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,16 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "DarkUI": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

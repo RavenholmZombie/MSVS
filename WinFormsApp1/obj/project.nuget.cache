@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "WVY+IYDsJM4W4d2VP+5I7nTqzU4ycjEy4dx04yT+h+WQX8A1kkz0fjg5y/LULoazIuAvAcOMuwuplKMu+29g0Q==",
+  "dgSpecHash": "mSjTB5YVVJ3hb0gMw6EVc+YeXNtzo7OQT9pxpetw5hhYKTieLN7wflEYTOvtGMo8o27B1ior+V54HZkc95mZDQ==",
   "success": true,
-  "projectFilePath": "D:\\Forge Dev\\MSVS\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "D:\\Forge Dev\\MSVS\\WinFormsApp1\\Minecraft Skin Viewer and Stealer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chris\\.nuget\\packages\\darkui\\2.0.2\\darkui.2.0.2.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\chris\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'DarkUI 2.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "DarkUI",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

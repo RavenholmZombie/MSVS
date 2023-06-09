@@ -83,6 +83,16 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2023_01_13_20_041 {
+            get {
+                object obj = ResourceManager.GetObject("2023-01-13_20.041", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2023_01_14_13_27_01 {
             get {
                 object obj = ResourceManager.GetObject("2023-01-14_13.27.01", resourceCulture);
@@ -116,6 +126,16 @@ namespace Minecraft_Skin_Viewer_and_Stealer.Properties {
         internal static System.Drawing.Bitmap c5ef3347_4593_4f39_8bb1_2eaa40dd986e {
             get {
                 object obj = ResourceManager.GetObject("c5ef3347-4593-4f39-8bb1-2eaa40dd986e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap darkBack {
+            get {
+                object obj = ResourceManager.GetObject("darkBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

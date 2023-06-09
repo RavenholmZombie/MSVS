@@ -28,293 +28,310 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-            this.pBoxSkin = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.showPlayerInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.poweredByMCHeadsnetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.useThisSkinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uA = new System.Windows.Forms.ToolStripMenuItem();
-            this.dialog = new System.Windows.Forms.SaveFileDialog();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioHead = new System.Windows.Forms.RadioButton();
-            this.radioFace = new System.Windows.Forms.RadioButton();
-            this.radioIso = new System.Windows.Forms.RadioButton();
-            this.radioSkin = new System.Windows.Forms.RadioButton();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxSkin)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            pBoxSkin = new PictureBox();
+            label1 = new Label();
+            dialog = new SaveFileDialog();
+            panel1 = new Panel();
+            groupRenders = new DarkUI.Controls.DarkGroupBox();
+            radioHead = new DarkUI.Controls.DarkRadioButton();
+            radioFace = new DarkUI.Controls.DarkRadioButton();
+            radioIso = new DarkUI.Controls.DarkRadioButton();
+            radioSkin = new DarkUI.Controls.DarkRadioButton();
+            textboxUsername = new DarkUI.Controls.DarkTextBox();
+            btnShow = new DarkUI.Controls.DarkButton();
+            btnDownload = new DarkUI.Controls.DarkButton();
+            toolTip = new ToolTip(components);
+            darkMenuStrip1 = new DarkUI.Controls.DarkMenuStrip();
+            aboutToolStripMenuItem2 = new ToolStripMenuItem();
+            aboutToolStripMenuItem3 = new ToolStripMenuItem();
+            showInfoAboutUSERToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripSeparator2 = new ToolStripSeparator();
+            poweredByMCHeadsnetToolStripMenuItem1 = new ToolStripMenuItem();
+            useThisSkinToolStripMenuItem1 = new ToolStripMenuItem();
+            updateAvailableToolStripMenuItem = new ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)pBoxSkin).BeginInit();
+            panel1.SuspendLayout();
+            groupRenders.SuspendLayout();
+            darkMenuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // pBoxSkin
             // 
-            this.pBoxSkin.BackColor = System.Drawing.Color.Transparent;
-            this.pBoxSkin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBoxSkin.ErrorImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.error;
-            this.pBoxSkin.InitialImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.MHF_Steve;
-            this.pBoxSkin.Location = new System.Drawing.Point(106, 50);
-            this.pBoxSkin.Name = "pBoxSkin";
-            this.pBoxSkin.Size = new System.Drawing.Size(86, 199);
-            this.pBoxSkin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBoxSkin.TabIndex = 0;
-            this.pBoxSkin.TabStop = false;
-            this.pBoxSkin.WaitOnLoad = true;
+            pBoxSkin.BackColor = Color.Transparent;
+            pBoxSkin.BackgroundImageLayout = ImageLayout.Stretch;
+            pBoxSkin.ErrorImage = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.error;
+            pBoxSkin.InitialImage = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.MHF_Steve;
+            pBoxSkin.Location = new Point(106, 50);
+            pBoxSkin.Name = "pBoxSkin";
+            pBoxSkin.Size = new Size(86, 199);
+            pBoxSkin.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxSkin.TabIndex = 0;
+            pBoxSkin.TabStop = false;
+            pBoxSkin.WaitOnLoad = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Enter a username or player UUID:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(28, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "e.g.: CSX8600";
-            this.textBox1.Size = new System.Drawing.Size(235, 23);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(148, 130);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Show";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(67, 128);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Download";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.useThisSkinToolStripMenuItem,
-            this.uA});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(291, 24);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem1,
-            this.showPlayerInfoToolStripMenuItem,
-            this.exitToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.poweredByMCHeadsnetToolStripMenuItem});
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // aboutToolStripMenuItem1
-            // 
-            this.aboutToolStripMenuItem1.Image = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.information;
-            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(216, 22);
-            this.aboutToolStripMenuItem1.Text = "About";
-            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
-            // 
-            // showPlayerInfoToolStripMenuItem
-            // 
-            this.showPlayerInfoToolStripMenuItem.Image = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.logo_nmc;
-            this.showPlayerInfoToolStripMenuItem.Name = "showPlayerInfoToolStripMenuItem";
-            this.showPlayerInfoToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
-            this.showPlayerInfoToolStripMenuItem.Text = "Show info about USER";
-            this.showPlayerInfoToolStripMenuItem.Click += new System.EventHandler(this.showPlayerInfoToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Image = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.door_out;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(213, 6);
-            // 
-            // poweredByMCHeadsnetToolStripMenuItem
-            // 
-            this.poweredByMCHeadsnetToolStripMenuItem.Image = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.c5ef3347_4593_4f39_8bb1_2eaa40dd986e;
-            this.poweredByMCHeadsnetToolStripMenuItem.Name = "poweredByMCHeadsnetToolStripMenuItem";
-            this.poweredByMCHeadsnetToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
-            this.poweredByMCHeadsnetToolStripMenuItem.Text = "Powered by MC-Heads.net";
-            this.poweredByMCHeadsnetToolStripMenuItem.Click += new System.EventHandler(this.poweredByMCHeadsnetToolStripMenuItem_Click);
-            // 
-            // useThisSkinToolStripMenuItem
-            // 
-            this.useThisSkinToolStripMenuItem.Name = "useThisSkinToolStripMenuItem";
-            this.useThisSkinToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.useThisSkinToolStripMenuItem.Text = "Use this Skin";
-            this.useThisSkinToolStripMenuItem.Click += new System.EventHandler(this.useThisSkinToolStripMenuItem_Click);
-            // 
-            // uA
-            // 
-            this.uA.Image = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.information;
-            this.uA.Name = "uA";
-            this.uA.Size = new System.Drawing.Size(124, 20);
-            this.uA.Text = "Update Available";
-            this.uA.Visible = false;
-            this.uA.Click += new System.EventHandler(this.uA_Click);
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(26, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(180, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Enter a username or player UUID:";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 263);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 165);
-            this.panel1.TabIndex = 6;
+            panel1.BackColor = Color.DimGray;
+            panel1.BackgroundImage = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.darkBack;
+            panel1.Controls.Add(groupRenders);
+            panel1.Controls.Add(textboxUsername);
+            panel1.Controls.Add(btnShow);
+            panel1.Controls.Add(btnDownload);
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 263);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(301, 165);
+            panel1.TabIndex = 6;
             // 
-            // groupBox1
+            // groupRenders
             // 
-            this.groupBox1.Controls.Add(this.radioHead);
-            this.groupBox1.Controls.Add(this.radioFace);
-            this.groupBox1.Controls.Add(this.radioIso);
-            this.groupBox1.Controls.Add(this.radioSkin);
-            this.groupBox1.Location = new System.Drawing.Point(28, 65);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 59);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Download Options";
+            groupRenders.BorderColor = Color.FromArgb(51, 51, 51);
+            groupRenders.Controls.Add(radioHead);
+            groupRenders.Controls.Add(radioFace);
+            groupRenders.Controls.Add(radioIso);
+            groupRenders.Controls.Add(radioSkin);
+            groupRenders.Location = new Point(26, 65);
+            groupRenders.Name = "groupRenders";
+            groupRenders.Size = new Size(249, 57);
+            groupRenders.TabIndex = 9;
+            groupRenders.TabStop = false;
+            groupRenders.Text = "Download Options:";
             // 
             // radioHead
             // 
-            this.radioHead.AutoSize = true;
-            this.radioHead.Location = new System.Drawing.Point(182, 22);
-            this.radioHead.Name = "radioHead";
-            this.radioHead.Size = new System.Drawing.Size(53, 19);
-            this.radioHead.TabIndex = 3;
-            this.radioHead.TabStop = true;
-            this.radioHead.Text = "Head";
-            this.radioHead.UseVisualStyleBackColor = true;
+            radioHead.AutoSize = true;
+            radioHead.Location = new Point(189, 22);
+            radioHead.Name = "radioHead";
+            radioHead.Size = new Size(53, 19);
+            radioHead.TabIndex = 13;
+            radioHead.TabStop = true;
+            radioHead.Text = "Head";
+            radioHead.CheckedChanged += radioHead_CheckedChanged_1;
             // 
             // radioFace
             // 
-            this.radioFace.AutoSize = true;
-            this.radioFace.Location = new System.Drawing.Point(132, 22);
-            this.radioFace.Name = "radioFace";
-            this.radioFace.Size = new System.Drawing.Size(49, 19);
-            this.radioFace.TabIndex = 2;
-            this.radioFace.TabStop = true;
-            this.radioFace.Text = "Face";
-            this.radioFace.UseVisualStyleBackColor = true;
+            radioFace.AutoSize = true;
+            radioFace.Location = new Point(134, 22);
+            radioFace.Name = "radioFace";
+            radioFace.Size = new Size(49, 19);
+            radioFace.TabIndex = 12;
+            radioFace.TabStop = true;
+            radioFace.Text = "Face";
+            radioFace.CheckedChanged += radioFace_CheckedChanged_1;
             // 
             // radioIso
             // 
-            this.radioIso.AutoSize = true;
-            this.radioIso.Location = new System.Drawing.Point(56, 22);
-            this.radioIso.Name = "radioIso";
-            this.radioIso.Size = new System.Drawing.Size(74, 19);
-            this.radioIso.TabIndex = 1;
-            this.radioIso.TabStop = true;
-            this.radioIso.Text = "Isometric";
-            this.radioIso.UseVisualStyleBackColor = true;
+            radioIso.AutoSize = true;
+            radioIso.Location = new Point(60, 22);
+            radioIso.Name = "radioIso";
+            radioIso.Size = new Size(74, 19);
+            radioIso.TabIndex = 11;
+            radioIso.TabStop = true;
+            radioIso.Text = "Isometric";
+            radioIso.CheckedChanged += radioIso_CheckedChanged_1;
             // 
             // radioSkin
             // 
-            this.radioSkin.AutoSize = true;
-            this.radioSkin.Location = new System.Drawing.Point(5, 22);
-            this.radioSkin.Name = "radioSkin";
-            this.radioSkin.Size = new System.Drawing.Size(47, 19);
-            this.radioSkin.TabIndex = 0;
-            this.radioSkin.TabStop = true;
-            this.radioSkin.Text = "Skin";
-            this.radioSkin.UseVisualStyleBackColor = true;
+            radioSkin.AutoSize = true;
+            radioSkin.Location = new Point(7, 22);
+            radioSkin.Name = "radioSkin";
+            radioSkin.Size = new Size(47, 19);
+            radioSkin.TabIndex = 10;
+            radioSkin.TabStop = true;
+            radioSkin.Text = "Skin";
+            radioSkin.CheckedChanged += radioSkin_CheckedChanged_1;
+            // 
+            // textboxUsername
+            // 
+            textboxUsername.AcceptsReturn = true;
+            textboxUsername.BackColor = Color.FromArgb(69, 73, 74);
+            textboxUsername.BorderStyle = BorderStyle.FixedSingle;
+            textboxUsername.ForeColor = Color.FromArgb(220, 220, 220);
+            textboxUsername.Location = new Point(26, 36);
+            textboxUsername.Name = "textboxUsername";
+            textboxUsername.PlaceholderText = "e.g. Dinnerbone";
+            textboxUsername.Size = new Size(249, 23);
+            textboxUsername.TabIndex = 8;
+            textboxUsername.TextChanged += darkTextBox1_TextChanged;
+            // 
+            // btnShow
+            // 
+            btnShow.Location = new Point(200, 128);
+            btnShow.Name = "btnShow";
+            btnShow.Padding = new Padding(5);
+            btnShow.Size = new Size(75, 23);
+            btnShow.TabIndex = 7;
+            btnShow.Text = "Show";
+            btnShow.Click += darkButton2_Click;
+            // 
+            // btnDownload
+            // 
+            btnDownload.Location = new Point(26, 128);
+            btnDownload.Name = "btnDownload";
+            btnDownload.Padding = new Padding(5);
+            btnDownload.Size = new Size(168, 23);
+            btnDownload.TabIndex = 6;
+            btnDownload.Text = "Download Skin";
+            btnDownload.Click += darkButton1_Click;
+            // 
+            // darkMenuStrip1
+            // 
+            darkMenuStrip1.BackColor = Color.FromArgb(60, 63, 65);
+            darkMenuStrip1.ForeColor = Color.FromArgb(220, 220, 220);
+            darkMenuStrip1.Items.AddRange(new ToolStripItem[] { aboutToolStripMenuItem2, useThisSkinToolStripMenuItem1, updateAvailableToolStripMenuItem });
+            darkMenuStrip1.Location = new Point(0, 0);
+            darkMenuStrip1.Name = "darkMenuStrip1";
+            darkMenuStrip1.Padding = new Padding(3, 2, 0, 2);
+            darkMenuStrip1.Size = new Size(301, 24);
+            darkMenuStrip1.TabIndex = 7;
+            darkMenuStrip1.Text = "darkMenuStrip1";
+            // 
+            // aboutToolStripMenuItem2
+            // 
+            aboutToolStripMenuItem2.BackColor = Color.FromArgb(60, 63, 65);
+            aboutToolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { aboutToolStripMenuItem3, showInfoAboutUSERToolStripMenuItem, exitToolStripMenuItem1, toolStripSeparator2, poweredByMCHeadsnetToolStripMenuItem1 });
+            aboutToolStripMenuItem2.ForeColor = Color.FromArgb(220, 220, 220);
+            aboutToolStripMenuItem2.Name = "aboutToolStripMenuItem2";
+            aboutToolStripMenuItem2.Size = new Size(52, 20);
+            aboutToolStripMenuItem2.Text = "About";
+            // 
+            // aboutToolStripMenuItem3
+            // 
+            aboutToolStripMenuItem3.BackColor = Color.FromArgb(60, 63, 65);
+            aboutToolStripMenuItem3.ForeColor = Color.FromArgb(220, 220, 220);
+            aboutToolStripMenuItem3.Image = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.information;
+            aboutToolStripMenuItem3.Name = "aboutToolStripMenuItem3";
+            aboutToolStripMenuItem3.Size = new Size(216, 22);
+            aboutToolStripMenuItem3.Text = "About";
+            aboutToolStripMenuItem3.Click += aboutToolStripMenuItem3_Click;
+            // 
+            // showInfoAboutUSERToolStripMenuItem
+            // 
+            showInfoAboutUSERToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
+            showInfoAboutUSERToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
+            showInfoAboutUSERToolStripMenuItem.Image = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.logo_nmc;
+            showInfoAboutUSERToolStripMenuItem.Name = "showInfoAboutUSERToolStripMenuItem";
+            showInfoAboutUSERToolStripMenuItem.Size = new Size(216, 22);
+            showInfoAboutUSERToolStripMenuItem.Text = "Show info about USER";
+            showInfoAboutUSERToolStripMenuItem.Click += showInfoAboutUSERToolStripMenuItem_Click;
+            // 
+            // exitToolStripMenuItem1
+            // 
+            exitToolStripMenuItem1.BackColor = Color.FromArgb(60, 63, 65);
+            exitToolStripMenuItem1.ForeColor = Color.FromArgb(220, 220, 220);
+            exitToolStripMenuItem1.Image = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.door_out;
+            exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            exitToolStripMenuItem1.Size = new Size(216, 22);
+            exitToolStripMenuItem1.Text = "Exit";
+            exitToolStripMenuItem1.Click += exitToolStripMenuItem1_Click;
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.BackColor = Color.FromArgb(60, 63, 65);
+            toolStripSeparator2.ForeColor = Color.FromArgb(220, 220, 220);
+            toolStripSeparator2.Margin = new Padding(0, 0, 0, 1);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(213, 6);
+            // 
+            // poweredByMCHeadsnetToolStripMenuItem1
+            // 
+            poweredByMCHeadsnetToolStripMenuItem1.BackColor = Color.FromArgb(60, 63, 65);
+            poweredByMCHeadsnetToolStripMenuItem1.ForeColor = Color.FromArgb(220, 220, 220);
+            poweredByMCHeadsnetToolStripMenuItem1.Image = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.c5ef3347_4593_4f39_8bb1_2eaa40dd986e;
+            poweredByMCHeadsnetToolStripMenuItem1.Name = "poweredByMCHeadsnetToolStripMenuItem1";
+            poweredByMCHeadsnetToolStripMenuItem1.Size = new Size(216, 22);
+            poweredByMCHeadsnetToolStripMenuItem1.Text = "Powered by MC-Heads.net";
+            poweredByMCHeadsnetToolStripMenuItem1.Click += poweredByMCHeadsnetToolStripMenuItem1_Click;
+            // 
+            // useThisSkinToolStripMenuItem1
+            // 
+            useThisSkinToolStripMenuItem1.BackColor = Color.FromArgb(60, 63, 65);
+            useThisSkinToolStripMenuItem1.ForeColor = Color.FromArgb(220, 220, 220);
+            useThisSkinToolStripMenuItem1.Name = "useThisSkinToolStripMenuItem1";
+            useThisSkinToolStripMenuItem1.Size = new Size(85, 20);
+            useThisSkinToolStripMenuItem1.Text = "Use this Skin";
+            useThisSkinToolStripMenuItem1.Click += useThisSkinToolStripMenuItem1_Click;
+            // 
+            // updateAvailableToolStripMenuItem
+            // 
+            updateAvailableToolStripMenuItem.BackColor = Color.FromArgb(60, 63, 65);
+            updateAvailableToolStripMenuItem.ForeColor = Color.FromArgb(220, 220, 220);
+            updateAvailableToolStripMenuItem.Image = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.information;
+            updateAvailableToolStripMenuItem.Name = "updateAvailableToolStripMenuItem";
+            updateAvailableToolStripMenuItem.Size = new Size(124, 20);
+            updateAvailableToolStripMenuItem.Text = "Update Available";
+            updateAvailableToolStripMenuItem.Visible = false;
+            updateAvailableToolStripMenuItem.Click += updateAvailableToolStripMenuItem_Click;
             // 
             // frmMain
             // 
-            this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Minecraft_Skin_Viewer_and_Stealer.Properties.Resources.bg;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(291, 428);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pBoxSkin);
-            this.Controls.Add(this.menuStrip1);
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Minecraft Skin Viewer and Stealer";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxSkin)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.WindowFrame;
+            BackgroundImage = Minecraft_Skin_Viewer_and_Stealer.Properties.Resources._2023_01_14_13_37_21;
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(301, 428);
+            Controls.Add(panel1);
+            Controls.Add(pBoxSkin);
+            Controls.Add(darkMenuStrip1);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "frmMain";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Minecraft Skin Viewer and Stealer";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pBoxSkin).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            groupRenders.ResumeLayout(false);
+            groupRenders.PerformLayout();
+            darkMenuStrip1.ResumeLayout(false);
+            darkMenuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pBoxSkin;
         private Label label1;
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem aboutToolStripMenuItem;
-        private ToolStripMenuItem aboutToolStripMenuItem1;
-        private ToolStripMenuItem exitToolStripMenuItem;
-        private ToolStripMenuItem useThisSkinToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem poweredByMCHeadsnetToolStripMenuItem;
         private SaveFileDialog dialog;
-        private ToolStripMenuItem uA;
         private Panel panel1;
-        private ToolStripMenuItem showPlayerInfoToolStripMenuItem;
-        private GroupBox groupBox1;
-        private RadioButton radioFace;
-        private RadioButton radioIso;
-        private RadioButton radioSkin;
-        private RadioButton radioHead;
         private ToolTip toolTip;
+        private DarkUI.Controls.DarkButton btnDownload;
+        private DarkUI.Controls.DarkButton btnShow;
+        private DarkUI.Controls.DarkTextBox textboxUsername;
+        private DarkUI.Controls.DarkGroupBox groupRenders;
+        private DarkUI.Controls.DarkRadioButton radioSkin;
+        private DarkUI.Controls.DarkRadioButton radioIso;
+        private DarkUI.Controls.DarkRadioButton radioFace;
+        private DarkUI.Controls.DarkRadioButton radioHead;
+        private DarkUI.Controls.DarkMenuStrip darkMenuStrip1;
+        private ToolStripMenuItem aboutToolStripMenuItem2;
+        private ToolStripMenuItem aboutToolStripMenuItem3;
+        private ToolStripMenuItem showInfoAboutUSERToolStripMenuItem;
+        private ToolStripMenuItem exitToolStripMenuItem1;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripMenuItem poweredByMCHeadsnetToolStripMenuItem1;
+        private ToolStripMenuItem useThisSkinToolStripMenuItem1;
+        private ToolStripMenuItem updateAvailableToolStripMenuItem;
     }
 }

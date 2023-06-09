@@ -57,7 +57,7 @@ namespace Minecraft_Skin_Viewer_and_Stealer
             {
                 WebClient wC = new WebClient();
 
-                if(!wC.DownloadString("https://raw.githubusercontent.com/RavenholmZombie/MSVS/main/update.txt").Contains(currentVersion))
+                if (!wC.DownloadString("https://raw.githubusercontent.com/RavenholmZombie/MSVS/main/update.txt").Contains(currentVersion))
                 {
                     // Newer Version
                     lblNewerVersion.Text = "Newer version: " + wC.DownloadString("https://raw.githubusercontent.com/RavenholmZombie/MSVS/main/update.txt");
@@ -74,7 +74,7 @@ namespace Minecraft_Skin_Viewer_and_Stealer
             catch (Exception ex)
             {
                 MessageBox.Show("An error occured while checking for updates: \n" + ex.Message, "Unable to check for updates", MessageBoxButtons.OK, MessageBoxIcon.Error);
-      
+
             }
         }
 
@@ -101,7 +101,7 @@ namespace Minecraft_Skin_Viewer_and_Stealer
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Unable to download update \n" + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

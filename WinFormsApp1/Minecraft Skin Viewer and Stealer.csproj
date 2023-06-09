@@ -9,9 +9,10 @@
     <ApplicationIcon>head.ico</ApplicationIcon>
     <AssemblyVersion>1.0.0.9</AssemblyVersion>
     <FileVersion>1.0.0.9</FileVersion>
-    <Version>1.0.9</Version>
+    <Version>1.1.0</Version>
     <Authors>RavenholmZombie</Authors>
     <Description>A simple Windows app that uses MC-Heads.net's API to view or download a player's skin.</Description>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +22,11 @@
   <ItemGroup>
     <Content Include="head.ico" />
     <Content Include="Resources\head.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DarkUI" Version="2.0.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
   </ItemGroup>
 
   <ItemGroup>
